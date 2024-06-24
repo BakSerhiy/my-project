@@ -1,0 +1,12 @@
+<!-- sidebar-menu.html -->
+<nav>
+    <!-- Sidebar menu content here -->
+    <ul>
+        <li th:each="menuItem : ${menuItems}">
+            <a th:href="${menuItem.link}">
+                <img th:src="@{'/svg/' + ${menuItem.icon} + '.svg'}" alt="Menu icon">
+                <span th:text="${menuItem.name}"></span>
+            </a>
+        </li>
+    </ul>
+</nav>

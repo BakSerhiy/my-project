@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" th:replace="layouts/layout">
+<head>
+
+</head>
+<body>
+<!-- Content specific to index.html -->
+<div th:replace="fragments/menu-item :: menu-item(link='/home', name='Home', icon='menu-icon1')"></div>
+<div th:replace="fragments/menu-item :: menu-item(link='/about', name='About', icon='menu-icon2')"></div>
+<div th:replace="fragments/menu-item :: menu-item(link='/contact', name='Contact', icon='menu-icon3')"></div>
+
+<!-- Additional content if needed -->
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>My Spring Boot App</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <script src="/js/functions.js"></script>
+</head>
+<body>
+<!-- Sidebar menu -->
+<div th:replace="fragments/sidebar-menu :: sidebar-menu"></div>
+
+<!-- Top menu -->
+<div th:replace="fragments/top-menu :: top-menu"></div>
+
+<!-- Content -->
+<div th:fragment="content">
+    <!-- Main content here -->
+    <h1>Welcome to our app!</h1>
+</div>
+</body>
+</html>
